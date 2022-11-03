@@ -15,7 +15,7 @@
     background-color: #0a0908;
     color: #ffffff;
     min-width: 25vw;
-    min-height: 80vh;
+    min-height: 95vh;
     /* padding-top: 30px; */
     padding-bottom: 0;
     box-sizing: border-box;
@@ -36,6 +36,7 @@
 .editprofile-body{
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 .editprofile-image{
     padding: 20px;
