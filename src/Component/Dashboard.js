@@ -1,5 +1,6 @@
 import React from "react";
 import "./Dashboard.css";
+import AddEvent from "./AddEvent";
 import Footer from "./Footer";
 
 function Dashboard() {

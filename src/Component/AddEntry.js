@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Table from "react";
 import "./AddEntry.css";
 
@@ -10,6 +11,8 @@ function AddEntry() {
     amount: "",
     comments: "",
   });
+  const navigate = useNavigate();
+
   function handleChange(event) {
     const { name, value, type, checked } = event.target;
     setFormData((prevFormData) => {
@@ -21,6 +24,7 @@ function AddEntry() {
   }
   function handleSubmit(event) {
     event.preventDefault();
+    navigate("/Dashboard");
   }
   return (
     <div className="container">

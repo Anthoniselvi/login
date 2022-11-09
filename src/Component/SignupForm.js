@@ -5,6 +5,7 @@ const SignupForm = ({ submitForm }) => {
   const [values, setValues] = useState({
     fullname: "",
     email: "",
+    phone: "",
     password: "",
   });
 
@@ -59,6 +60,18 @@ const SignupForm = ({ submitForm }) => {
             />
             {errors.email && <p className="error">{errors.email}</p>}
           </div>
+          <div className="phone">
+            <label className="label">Mobile Number</label>
+            <input
+              className="input"
+              type="text"
+              name="phone"
+              value={values.phone}
+              onChange={handleChange}
+            />
+            {errors.phone && <p className="error">{errors.phone}</p>}
+          </div>
+
           <div className="password">
             <label className="label">Password</label>
             <input

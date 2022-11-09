@@ -1,42 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 *{
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    color: #b5179e;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  .container{
+    background: pink;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .app-wrapper{
+    background-color: #FFF;
+    min-width: 25vw;
+      height: 95vh;
+    padding: 30px;
+    padding-top:10px;
+    /* box-sizing: border-box; */
+    border-radius:30px;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
 }
 
-.container{
-  background: pink;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.app-wrapper::-webkit-scrollbar {
+	display: none;
 }
-.app-wrapper{
-  background-color: #FFF;
-  min-width: 25vw;
-    min-height: 80vh;
-  padding: 30px;
-  
-  box-sizing: border-box;
-  border-radius:30px;
-}
-.title{
-  color: #f80759;
-  text-align: center;
-  margin: 40px 0px 40px 0px;
-}
+  .title{
+    color: #b5179e;
+    text-align: center;
+    margin-top: 0;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  input{
+    padding: 10px;
+    border-radius:20px;
+    border: 0.5px solid gainsboro;
+  }
 .name,
 .email,
+.phone,
 .password{
-  margin: 20px;
   color: #969292;
   font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .password{
   margin-bottom: 40px;
 }
 .input{
-  height: 32px;
+  /* height: 32px;
   font-size: 20px;
   outline: none;
   width: 100%;
@@ -44,7 +68,7 @@
   border-left-style: none ;
   border-right-style: none ;
   border-bottom-style: 2px solid black;
-  margin-bottom: 10px;
+  margin-bottom: 10px; */
 }
 .error{
   color: red;
