@@ -6,10 +6,12 @@ import EditProfile from "./Component/EditProfile";
 import AddEntry from "./Component/AddEntry";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import AddEvent from "./Component/AddEvent";
+import FrontPage from "./Component/FrontPage";
 
 function App() {
   return (
     <div>
+      {/* <FrontPage /> */}
       {/* <Form /> */}
       {/* <Dashboard /> */}
       {/* <EditProfile /> */}
@@ -17,7 +19,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/">
-            <Route index element={<Form />} />
+            <Route index element={<FrontPage />} />
+            <Route path="form" element={<Form />} />
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="addevent" element={<AddEvent />} />
             <Route path="addentry" element={<AddEntry />} />
